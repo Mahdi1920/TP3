@@ -1,0 +1,14 @@
+<h1>Orientation Etudiant</h1>
+<ul>
+    <li>Nom : {{nom}}</li>
+    <li>Moyenne : {{moy}}</li>
+    <li *ngIf="etudiant.moyenne < 10 ; else listspec ">{{decision}}</li>
+</ul>      
+    <ng-template #listspec>
+        <li>
+        <select [(ngModel)]="spec">
+            <option *ngFor="let s of specialites" value={{s}}>{{s}}</option>   
+        </select> Vous avez choisi {{spec}}
+    </li>
+            
+    </ng-template>
