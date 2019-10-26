@@ -3,6 +3,7 @@ Donnez un numéro de mois: <input type="number" min="1" max="12" [(ngModel)]="mo
 <div [ngSwitch]="mois">
     <p *ngSwitchCase="1">Le mois {{mois}} est un Hiver </p>
     <p *ngSwitchCase="2">Le mois {{mois}} est un Hiver </p>
+    <p *ngSwitchCase="12">Le mois {{mois}} est un Hiver </p>
     <p *ngSwitchCase="3">Le mois {{mois}} est un Printemps </p>
     <p *ngSwitchCase="4">Le mois {{mois}} est un Printemps </p>
     <p *ngSwitchCase="5">Le mois {{mois}} est un Printemps </p>
@@ -12,6 +13,5 @@ Donnez un numéro de mois: <input type="number" min="1" max="12" [(ngModel)]="mo
     <p *ngSwitchCase="9">Le mois {{mois}}est un Automne </p>
     <p *ngSwitchCase="10">Le mois{{mois}} est un Automne </p>
     <p *ngSwitchCase="11">Le mois{{mois}} est un Automne </p>
-    <p *ngSwitchCase="12">Le mois {{mois}} est un Hiver </p>
     <p *ngSwitchDefault>Le mois est incorrect!!</p>
 </div>

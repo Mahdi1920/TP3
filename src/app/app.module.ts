@@ -7,6 +7,8 @@ import { ProfilComponent } from './profil/profil.component';
 import { OrientationComponent } from './orientation/orientation.component';
 import { TableauComponent } from './tableau/tableau.component';
 import { SaisonComponent } from './saison/saison.component';
+import { StyleClassComponent } from './style-class/style-class.component';
+import { ColoriageComponent } from './coloriage/coloriage.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SaisonComponent } from './saison/saison.component';
     ProfilComponent,
     OrientationComponent,
     TableauComponent,
-    SaisonComponent
+    SaisonComponent,
+    StyleClassComponent,
+    ColoriageComponent
   ],
   imports: [
     BrowserModule,
