@@ -13,6 +13,7 @@ res:string="";
 t1:string="";
 t2:string="";
 t3:string="";
+c:string;
 Onaffiche()
 {
   this.res="Résultat";
@@ -21,6 +22,7 @@ Onaffiche()
   constructor() { }
 
   ngOnInit() {
-  }
+    //(function(){console.log('ss')})()
 
+  }
 }
