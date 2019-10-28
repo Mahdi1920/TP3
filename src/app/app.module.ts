@@ -9,6 +9,9 @@ import { TableauComponent } from './tableau/tableau.component';
 import { SaisonComponent } from './saison/saison.component';
 import { StyleClassComponent } from './style-class/style-class.component';
 import { ColoriageComponent } from './coloriage/coloriage.component';
+import { EtudiantsComponent } from './etudiants/etudiants.component';
+import { EmployeComponent } from './employe/employe.component';
+import { NomPersoPipe } from './nom-perso.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ColoriageComponent } from './coloriage/coloriage.component';
     TableauComponent,
     SaisonComponent,
     StyleClassComponent,
-    ColoriageComponent
+    ColoriageComponent,
+    EtudiantsComponent,
+    EmployeComponent,
+    NomPersoPipe
   ],
   imports: [
     BrowserModule,
