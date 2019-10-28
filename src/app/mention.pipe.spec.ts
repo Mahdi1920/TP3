@@ -1,8 +1,8 @@
-import { MontionPipe } from './montion.pipe';
+import { MentionPipe } from './mention.pipe';
 
 describe('MonsionPipe', () => {
   it('create an instance', () => {
-    const pipe = new MontionPipe();
+    const pipe = new MentionPipe();
     expect(pipe).toBeTruthy();
   });
 });

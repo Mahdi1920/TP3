@@ -12,10 +12,7 @@ export class EtudiantsComponent implements OnInit {
               {nom:'Ammar', prenom:'Ali', date:new Date(2003,7,10), ville:'Tunis', moyenne:10.3},
               {nom:'Smiri', prenom:'Maroua', date:new Date(2001,1,11), ville:'Nabeul', moyenne:16.3}  
             ] 
-  montion1:string=" : Montion pssable";
-  montion2:string=" : Montion Assez Bien";
-  montion3:string=" : Montion Bien";
-  montion4:string=" : Montion Très Bien";
+  
   constructor() { }
 
   ngOnInit() {

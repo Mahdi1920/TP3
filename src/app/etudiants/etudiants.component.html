@@ -4,7 +4,7 @@
     <ul>
         <li>{{etudiants[0].prenom}} {{etudiants[0].nom  |uppercase}}</li>
         <li>{{etudiants[0].date |date}}</li>
-        <li [ngClass]="{'c2':etudiants[0].moyenne>='16' , 'c1': etudiants[0].moyenne<'16'}" >{{etudiants[0].moyenne |montion}}</li>
+        <li [ngClass]="{'c2':etudiants[0].moyenne>='16' , 'c1': etudiants[0].moyenne<'16'}" >{{etudiants[0].moyenne |mention}}</li>
             
 
 
@@ -16,7 +16,7 @@
     <ul>
         <li>{{etudiants[1].prenom}} {{etudiants[1].nom |uppercase}}</li>
         <li>{{etudiants[1].date |date}}</li>
-        <li [ngClass]="{'c2':etudiants[1].moyenne>='16' , 'c1': etudiants[1].moyenne<'16'}" >{{etudiants[1].moyenne |montion}}</li>
+        <li [ngClass]="{'c2':etudiants[1].moyenne>='16' , 'c1': etudiants[1].moyenne<'16'}" >{{etudiants[1].moyenne |mention}}</li>
         <li *ngIf="etudiants[1].ville!='Tunis'">{{etudiants[1].ville}}</li>
     </ul>
 </ul>
@@ -25,7 +25,7 @@
     <ul>
         <li>{{etudiants[2].prenom}} {{etudiants[2].nom |uppercase}}</li>
         <li>{{etudiants[2].date |date}}</li>
-        <li [ngClass]="{'c2':etudiants[2].moyenne>='16' , 'c1': etudiants[2].moyenne<'16'}">{{etudiants[2].moyenne |montion}}</li>
+        <li [ngClass]="{'c2':etudiants[2].moyenne>='16' , 'c1': etudiants[2].moyenne<'16'}">{{etudiants[2].moyenne |mention}}</li>
         <li *ngIf="etudiants[2].ville!='Tunis'">{{etudiants[2].ville }}</li>
     </ul>
  </ul>
@@ -34,7 +34,7 @@
     <ul>
         <li>{{etudiants[3].prenom}} {{etudiants[3].nom |uppercase}}</li>
         <li>{{etudiants[3].date |date}}</li>
-        <li [ngClass]="{'c2':etudiants[3].moyenne>='16' , 'c1': etudiants[3].moyenne<'16'}">{{etudiants[3].moyenne |montion}}</li>
+        <li [ngClass]="{'c2':etudiants[3].moyenne>='16' , 'c1': etudiants[3].moyenne<'16'}">{{etudiants[3].moyenne |mention}}</li>
         <li *ngIf="etudiants[3].ville!='Tunis'">{{etudiants[3].ville}}</li>
     </ul>
 </ul>

@@ -1,21 +1,21 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'montion'
+  name: 'mention'
 })
-export class MontionPipe implements PipeTransform {
+export class MentionPipe implements PipeTransform {
 
   transform(moyenne: string): string{
     if (moyenne>="10" && moyenne<"12")
-      return moyenne+' : Montion passable';
+      return moyenne+' : Mention Passable';
       else
     if (moyenne>="12" && moyenne<"14")
-      return moyenne+' : Montion Assez Bien'; 
+      return moyenne+' : Mention Assez Bien'; 
       else
     if (moyenne>="14" && moyenne<"16")
-      return moyenne+' : Montion Bien';  
+      return moyenne+' : Mention Bien';  
     else 
-    return moyenne+' : Montion Très Bien'; 
+    return moyenne+' : Mention Très Bien'; 
   }
 
 }
