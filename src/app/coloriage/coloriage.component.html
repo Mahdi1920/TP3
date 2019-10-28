@@ -1,4 +1,4 @@
-<h1 [ngClass]="{ete: c=='Eté', standard:c=='Standard' , sombre:c=='Sombre'}" >Coloriage</h1>
+<h1 [ngClass]="{'ete': c=='Eté', 'standard':c=='Standard' , 'sombre':c=='Sombre'}" >Coloriage</h1>
 Couleur <input type="text" #col><br/>
 <select #pol>
     <option  value="Arial" selected>Arial</option>

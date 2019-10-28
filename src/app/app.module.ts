@@ -12,7 +12,7 @@ import { ColoriageComponent } from './coloriage/coloriage.component';
 import { EtudiantsComponent } from './etudiants/etudiants.component';
 import { EmployeComponent } from './employe/employe.component';
 import { NomPersoPipe } from './nom-perso.pipe';
-import { MonsionPipe } from './monsion.pipe';
+import { MontionPipe } from './montion.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { MonsionPipe } from './monsion.pipe';
     EtudiantsComponent,
     EmployeComponent,
     NomPersoPipe,
-    MonsionPipe
+    MontionPipe
   ],
   imports: [
     BrowserModule,
