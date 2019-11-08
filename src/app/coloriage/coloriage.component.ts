@@ -10,9 +10,7 @@ couleur:string="";
 police:string="";
 theme:string="";
 res:string="";
-t1:string="Eté";
-t2:string="Standard";
-t3:string="Sombre";
+t:string="Sombre";
 c:string;
 Onaffiche()
 {
