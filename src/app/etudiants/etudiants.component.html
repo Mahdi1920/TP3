@@ -1,5 +1,5 @@
 <h1>Affichage des étudiants</h1>
-<ul>
+<!--<ul>
     <li>Etudiant num°1</li>
     <ul>
         <li>{{etudiants[0].prenom}} {{etudiants[0].nom  |uppercase}}</li>
@@ -37,5 +37,23 @@
         <li [ngClass]="{'c2':etudiants[3].moyenne>='16' , 'c1': etudiants[3].moyenne<'16'}">{{etudiants[3].moyenne |mention}}</li>
         <li *ngIf="etudiants[3].ville!='Tunis'">{{etudiants[3].ville}}</li>
     </ul>
-</ul>
+</ul>-->
                         
+<ul>
+    <li *ngFor="let e of etudiants ;let indice=index">Etudiant n° {{indice+1}}
+        <ul>
+            <li>
+                {{e.prenom}} {{e.nom  |uppercase}} 
+            </li>
+            <li>
+                {{e.date |date}}
+            </li>
+            <li [ngClass]="{'c2':e.moyenne>='16' , 'c1': e.moyenne<'16'}">
+                {{e.moyenne |mention}}
+            </li>
+            <li *ngIf="e.ville!='Tunis'">{{e.ville}}</li>
+            
+        </ul>
+    </li>
+    
+</ul>
