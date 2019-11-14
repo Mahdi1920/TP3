@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColoriageComponent implements OnInit {
 couleur:string="";
-police:string="";
+police:string="Arial";
 theme:string="";
 res:string="";
 t:string="Sombre";
-c:string;
+
 Onaffiche()
 {
   this.res="Résultat";
@@ -20,7 +20,7 @@ Onaffiche()
   constructor() { }
 
   ngOnInit() {
-    //(function(){console.log('ss')})()
+    
 
   }
 }
